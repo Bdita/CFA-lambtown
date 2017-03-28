@@ -19,7 +19,6 @@
 <%= link_to 'Back', posts_path %>
 
 <%= render 'comments/form', comment: @comment, post: @post %>
-
 <% @comments.each do |comment| %>
           <p> <%= comment.user.email %></p>
           <p><%= comment.content %><%=comment.created_at%></p>
